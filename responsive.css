@@ -1,0 +1,54 @@
+/* Layout safeguards only; visual assets and animation detail stay unchanged. */
+:root{--header-height:84px}
+section[id],#service-capabilities{scroll-margin-top:calc(var(--header-height) + 20px)}
+.hero-copy,.service-lead,.about-story,.contact-intro,.contact-social>*,.about-values>*,.steps>*{min-width:0}
+.contact-bottom,.contact-line,.about-signoff,.service-footer,.hero-foot{overflow-wrap:anywhere}
+.intro-controls{position:absolute;right:24px;bottom:max(24px,env(safe-area-inset-bottom));display:flex;gap:10px;max-width:calc(100% - 48px)}
+.intro-controls .intro-sound-toggle,.intro-controls .skip-intro{position:static;min-width:0;min-height:44px;overflow-wrap:anywhere}
+dialog{max-width:calc(100vw - 24px);max-height:calc(100vh - 32px);max-height:calc(var(--available-height,100dvh) - 32px);overflow-y:auto;overscroll-behavior:contain;scroll-padding-block:20px}
+#project-form input,#project-form select,#project-form textarea{min-width:0;max-width:100%}
+#project-form textarea{resize:vertical;min-height:100px}
+#project-form .form-note,#whatsapp-fallback{overflow-wrap:anywhere}
+.faq summary{line-height:1.6}
+@media(max-width:1000px){
+  .service-capabilities{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .service-capabilities>.capability:last-child{grid-column:1/-1}
+  .contact-social{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .contact-social>div{grid-column:1/-1}
+}
+@media(max-width:800px){
+  :root{--header-height:122px}
+  .topbar{padding:12px 20px;gap:10px}
+  .topbar nav{gap:3px;min-width:0}
+  .topbar nav a{display:flex;align-items:center;justify-content:center;flex:1;min-width:44px;min-height:44px;padding:8px 2px;font-size:11px}
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .hero-actions{gap:16px}
+  .hero-actions .button{min-height:48px}
+  .contact-social{grid-template-columns:minmax(0,1fr)}
+  .contact-order{gap:14px;padding:18px 20px}
+  .contact-order span{min-width:0}
+  .contact-order b{flex-shrink:0}
+  .hero .intro,.service-lead>p:not(.eyebrow),.about-story>p:not(.eyebrow),.contact-intro>p:not(.eyebrow){font-size:15px;line-height:1.85}
+  .price-card ul,.capability p,.service-connections p,.steps p,.about-values p,.faq details p{font-size:14px}
+  .price small,.hero-offer small,.form-note{font-size:11px}
+  #project-form input,#project-form select,#project-form textarea{font-size:16px;min-height:44px}
+  .contact-bottom a,footer a{display:inline-flex;align-items:center;min-height:44px}
+}
+@media(max-width:700px){.service-capabilities{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){
+  .intro-controls{left:16px;right:16px;bottom:max(20px,env(safe-area-inset-bottom));max-width:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .intro-controls button{width:100%;padding:12px 8px}
+  .intro-controls .skip-intro{grid-column:2}
+}
+@media(max-width:420px){
+  .section{padding-left:20px;padding-right:20px}
+  .hero{padding-left:20px;padding-right:20px}
+  .topbar{padding-left:16px;padding-right:16px}
+  .price-card,.capability{padding:24px}
+  .fariz-profile figcaption{flex-direction:column;align-items:flex-start;gap:6px}
+  .fariz-profile figcaption span{text-align:left}
+  .contact-order span{font-size:16px}
+  .contact-order small{font-size:8px;letter-spacing:1px}
+  .hero-foot{flex-wrap:wrap;gap:12px}
+}
+@media(hover:none){.price-card:hover,.capability:hover,.primary:hover,.nav-cta:hover,.contact-order:hover{transform:none}}

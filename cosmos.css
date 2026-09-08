@@ -1,0 +1,8 @@
+.hero .nebula-visual{min-height:580px}
+.nebula-window{inset:-12% -16% -2% -18%}
+#nebula-stars{opacity:0;transition:opacity 1s}.nebula-ready #nebula-stars{opacity:1}
+.cosmos-fallback{position:absolute;inset:0;background:radial-gradient(ellipse at 65% 30%,#9e70d640,transparent 40%),radial-gradient(ellipse at 35% 60%,#6329a65c,transparent 45%);transition:opacity 1s}.nebula-ready .cosmos-fallback{opacity:0}
+.cosmos-toggle{grid-column:2;justify-self:end;border:1px solid #b398d42b;background:#160d224d;color:#c3afd6;font:9px 'DM Mono',monospace;padding:10px 14px;border-radius:30px;cursor:pointer;position:relative;z-index:3;margin:8px 0 20px}.cosmos-toggle:hover{border-color:#b398d4aa;color:white}
+@media(max-width:800px){.hero .nebula-visual{min-height:440px}.nebula-window{inset:-8% -10% 0}.cosmos-toggle{grid-column:1;margin-top:0}}
+@media(max-width:420px){.hero .nebula-visual{min-height:370px}}
+@media(prefers-reduced-motion:reduce){#nebula-stars,.cosmos-fallback{transition:none}}

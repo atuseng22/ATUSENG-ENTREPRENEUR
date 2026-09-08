@@ -1,0 +1,17 @@
+/* Cosmic hero: original nebula artwork, drifting clouds and depth-projected stars. */
+.hero .nebula-visual{min-height:570px;isolation:isolate;perspective:none;min-width:0}
+.nebula-window{position:absolute;inset:-9% -12% 0 -10%;overflow:hidden;pointer-events:none;mask-image:radial-gradient(ellipse at 50% 49%,#000 26%,#000d 45%,transparent 72%);-webkit-mask-image:radial-gradient(ellipse at 50% 49%,#000 26%,#000d 45%,transparent 72%)}
+.nebula-depth{position:absolute;inset:0}
+.nebula-cloud{display:block;position:absolute;width:100%;height:100%;object-fit:cover;opacity:.93;animation:cosmic-drift 12s ease-in-out -4s infinite alternate;animation-play-state:paused;will-change:transform}
+.nebula-mist{position:absolute;inset:-8%;background:url('atuseng-nebula.png') center/cover no-repeat;mix-blend-mode:screen;opacity:.24;animation:cosmic-mist 18s ease-in-out -6s infinite alternate;animation-play-state:paused;mask-image:radial-gradient(ellipse,black,transparent 65%)}
+.nebula-light{position:absolute;inset:15%;background:radial-gradient(ellipse at 64% 58%,#b696fa35,transparent 42%),radial-gradient(ellipse at 25% 25%,#783dc631,transparent 40%);mix-blend-mode:screen;animation:cosmic-breathe 7s ease-in-out -2s infinite;animation-play-state:paused}
+.cosmos-running .nebula-cloud,.cosmos-running .nebula-mist,.cosmos-running .nebula-light{animation-play-state:running}
+#nebula-stars{position:absolute;inset:0;width:100%;height:100%;opacity:.95}
+.nebula-visual .hero-signature{bottom:12px;left:0;right:0;color:#bb9ad6;letter-spacing:1.7px}
+.about.section{grid-template-columns:minmax(0,1.3fr) minmax(260px,.85fr);gap:clamp(35px,7vw,110px);align-items:start}.about.section .about-copy{max-width:660px}.about.section .about-copy h2{font-size:clamp(36px,4.4vw,64px)}
+@keyframes cosmic-drift{from{transform:scale(1.12) rotate(-16deg) translate(-4%,3%)}to{transform:scale(1.32) rotate(12deg) translate(4%,-3%)}}
+@keyframes cosmic-mist{from{transform:scale(1.05) rotate(18deg) translate(5%,-3%);opacity:.14}to{transform:scale(1.25) rotate(-18deg) translate(-5%,3%);opacity:.32}}
+@keyframes cosmic-breathe{0%,100%{opacity:.45;transform:scale(.93)}50%{opacity:1;transform:scale(1.12)}}
+@media(max-width:800px){.hero .nebula-visual{min-height:440px;margin-top:10px}.nebula-window{inset:-6% -8% 0}.about.section{grid-template-columns:1fr;gap:35px}}
+@media(max-width:420px){.hero .nebula-visual{min-height:370px}.nebula-visual .hero-signature{font-size:6px;letter-spacing:1px}}
+@media(prefers-reduced-motion:reduce){.nebula-cloud,.nebula-mist,.nebula-light{animation:none!important}.nebula-depth{transform:none;transition:none}}

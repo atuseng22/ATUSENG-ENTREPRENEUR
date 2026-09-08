@@ -1,0 +1,25 @@
+/* One opening sequence: gather, assemble, illuminate, dissolve. */
+.atuseng-intro{position:fixed;inset:0;z-index:100;display:grid;place-items:center;overflow:hidden;background:#090510;isolation:isolate;animation:intro-dissolve .85s cubic-bezier(.4,0,.2,1) 4s both}
+html.intro-playing{overflow:hidden}
+.intro-atmosphere{position:absolute;inset:-15%;background:radial-gradient(ellipse at 50% 44%,#65349a45,transparent 45%),radial-gradient(ellipse at 35% 65%,#3d176a20,transparent 50%);animation:intro-atmosphere 4s ease both;pointer-events:none}
+.intro-stage{position:relative;width:min(960px,96vw,117svh);aspect-ratio:3/2;animation:intro-camera 4.85s cubic-bezier(.2,.65,.3,1) both}
+#intro-lightfield{position:absolute;inset:0;display:block;width:100%;height:100%}
+.intro-logo-fallback,.intro-wordmark{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;mix-blend-mode:screen;pointer-events:none}
+.intro-logo-fallback{clip-path:inset(14% 30% 36% 30%);animation:intro-fallback 1.6s ease .65s both}
+.intro-rendered .intro-logo-fallback{display:none}
+.intro-wordmark{clip-path:inset(67% 18% 15% 18%);mask-image:linear-gradient(transparent 67%,#000 69%,#000 84%,transparent 85%);-webkit-mask-image:linear-gradient(transparent 67%,#000 69%,#000 84%,transparent 85%);animation:intro-name 1.05s cubic-bezier(.16,1,.3,1) 2.65s both}
+.intro-timeline{position:absolute;bottom:38px;left:32px;width:100px;height:1px;background:#b697d927;overflow:hidden}
+.intro-timeline span{display:block;height:100%;background:linear-gradient(90deg,#7542c9,#dcc3ff);transform-origin:left;animation:intro-progress 4.85s linear both}
+.skip-intro{position:absolute;right:24px;bottom:24px;min-height:44px;border:1px solid #b795de40;border-radius:30px;background:#150c21b8;color:#ded1ee;padding:12px 18px;cursor:pointer;font:11px Manrope,Arial,sans-serif;letter-spacing:.2px}
+.skip-intro:hover,.skip-intro:focus-visible{border-color:#d3beff;outline:2px solid #7950b8;outline-offset:4px}
+.intro-sound-toggle{position:absolute;right:168px;bottom:24px;min-height:44px;padding:12px 18px;border:1px solid #b795de50;border-radius:30px;background:#241236;color:#dec9f4;cursor:pointer;font:11px Manrope,Arial,sans-serif}.intro-sound-toggle[hidden]{display:none}.intro-sound-toggle[aria-pressed="true"]{border-color:#d9ff8380;color:#d9ff83}.intro-sound-toggle:focus-visible{outline:2px solid #c39cf6;outline-offset:4px}.intro-sound-toggle:disabled{cursor:default;opacity:.65}@media(max-width:600px){.intro-timeline{bottom:90px}.intro-sound-toggle{left:24px;right:auto;padding:12px 14px}}
+.atuseng-brand-mark{width:38px;height:38px;flex-shrink:0;background:url('atuseng-logo.png') 50% 29% / 275% auto no-repeat;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.brand{font-size:18px;letter-spacing:1px}.hero-actions .text{max-width:235px}.hero-actions{flex-wrap:wrap}
+@keyframes intro-dissolve{0%{opacity:1}100%{opacity:0;visibility:hidden;pointer-events:none}}
+@keyframes intro-camera{0%{transform:scale(.92)}55%{transform:scale(1)}82%{transform:scale(1)}100%{transform:scale(1.055)}}
+@keyframes intro-atmosphere{0%{opacity:.2;transform:scale(.8)}60%,100%{opacity:1;transform:scale(1)}}
+@keyframes intro-name{from{opacity:0;transform:translateY(12px);filter:blur(5px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+@keyframes intro-fallback{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+@keyframes intro-progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(max-width:600px){.intro-stage{width:110vw;max-width:117svh}.brand{font-size:15px}.atuseng-brand-mark{width:30px;height:30px}.intro-timeline{left:24px;width:68px}}
+@media(prefers-reduced-motion:reduce){.atuseng-intro{display:none}}

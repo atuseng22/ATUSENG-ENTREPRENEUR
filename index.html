@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080512" />
+    <meta name="description" content="ATUSENG ENTREPRENEUR — partner digital untuk UMKM yang ingin tampil, ditemukan, dan bertumbuh." />
+    <title>ATUSENG ENTREPRENEUR</title>
+    <link rel="icon" type="image/png" href="atuseng-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="atuseng.css" />
+    <link rel="stylesheet" href="studio.css" />
+    <link rel="stylesheet" href="nebula.css" />
+    <link rel="stylesheet" href="cosmos.css" />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="preload" as="image" href="atuseng-logo.png" />
+  </head>
+  <body>
+    <div class="atuseng-intro" role="dialog" aria-modal="true" aria-label="Animasi pembuka ATUSENG ENTREPRENEUR">
+      <div class="intro-atmosphere" aria-hidden="true"></div>
+      <div class="intro-stage" aria-hidden="true">
+        <img class="intro-logo-fallback" src="atuseng-logo.png" alt="" />
+        <canvas id="intro-lightfield"></canvas>
+        <img class="intro-wordmark" src="atuseng-logo.png" alt="" />
+      </div>
+      <div class="intro-timeline" aria-hidden="true"><span></span></div>
+      <div class="intro-controls">
+        <button class="intro-sound-toggle" type="button" aria-pressed="false" hidden>Aktifkan suara</button>
+        <button class="skip-intro" type="button">Lewati intro ↗</button>
+      </div>
+    </div>
+    <noscript><style>.atuseng-intro{display:none}</style></noscript>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="orb orb-one" aria-hidden="true"></div><div class="orb orb-two" aria-hidden="true"></div>
+    <header class="topbar">
+      <a href="#home" class="brand" aria-label="ATUSENG ENTREPRENEUR, beranda"><span class="atuseng-brand-mark" aria-hidden="true"></span><span>ATUSENG<small>ENTREPRENEUR</small></span></a>
+      <nav aria-label="Navigasi utama"><a class="active" href="#home">Home</a><a href="#services">Services</a><a href="#packages">Packages</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+      <a href="#packages" class="nav-cta">Mulai proyek <span>↗</span></a>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> DIGITAL GROWTH PARTNER / 01</p>
+          <h1>UMKM kamu,<br /><em>siap terlihat.</em></h1>
+          <p class="intro">Kami merancang kehadiran digital agar bisnis lokal tidak hanya terlihat, tetapi dipilih, melalui website yang memikat dan memudahkan owner serta konsumen berinteraksi.</p>
+          <div class="hero-actions"><a class="button primary" href="#packages">Temukan paketmu <span>↗</span></a><a class="button text" href="#services">Eksplor layanan <span>↓</span></a></div>
+          <p class="hero-offer">Mulai <b>Rp350.000</b> · 4 halaman + domain .com tahun pertama<br /><small>Promo pembelian pertama untuk pelanggan baru.</small></p>
+        </div>
+        <div class="hero-visual nebula-visual" role="img" aria-label="Galaksi spiral ungu dengan ribuan bintang yang mengorbit inti lavender bercahaya">
+          <div class="nebula-window" aria-hidden="true"><div class="cosmos-fallback"></div><canvas id="nebula-stars"></canvas></div>
+          <div class="hero-signature" aria-hidden="true"><span>IDE → IDENTITAS → INTERAKSI</span></div>
+        </div>
+        <div class="hero-foot"><span>SCROLL TO EXPLORE</span><div></div><span>YOGYAKARTA · INDONESIA</span></div>
+      </section>
+
+      <section id="services" class="services section">
+        <div class="service-universe">
+          <div class="service-lead"><p class="eyebrow"><span></span> THE DIGITAL ECOSYSTEM</p><h2>Bukan sekadar hadir.<br /><em>Buat mereka<br />tertarik.</em></h2><p>Website yang punya karakter. Pengalaman yang hidup. Jalur yang mudah dari mengenal usahamu hingga menghubungimu.</p><a class="button text" href="#service-capabilities">Temukan kemungkinanmu <span>↓</span></a></div>
+          <div class="service-observatory"><canvas id="service-orbits" role="img" aria-label="Konstelasi tiga dimensi: cincin partikel ungu berputar dan menghubungkan layanan digital"></canvas><span class="orbit-label orbit-label-a">WEBSITE</span><span class="orbit-label orbit-label-b">MOTION</span><span class="orbit-label orbit-label-c">CONNECTION</span></div>
+        </div>
+        <div class="service-capabilities" id="service-capabilities">
+          <article class="capability capability-web"><span class="capability-kicker">YOUR DIGITAL HOME</span><div class="capability-scene"><canvas data-service-scene="website" role="img" aria-label="Panel website tiga dimensi yang terurai dan tersusun kembali"></canvas></div><h3>Website UMKM.</h3><p>Rumah digital untuk memperkenalkan cerita, layanan, dan identitas usahamu. Dirancang agar nyaman dijelajahi di HP maupun desktop, dengan informasi yang mudah dipahami.</p><a class="service-link" href="#contact">Diskusikan websitemu <span>↗</span></a></article>
+          <article class="capability capability-motion"><span class="capability-kicker">MAKE A FIRST IMPRESSION</span><div class="capability-scene"><canvas data-service-scene="ribbon" role="img" aria-label="Pita cahaya ungu tiga dimensi yang berpilin dan mengalir"></canvas></div><h3>Desain & animasi.</h3><p>Hidupkan identitas usahamu melalui tampilan visual, intro logo, dan animasi yang berkarakter. Gerak yang menarik perhatian tanpa menghalangi informasi.</p><a class="service-link" href="#contact">Ceritakan konsep visualmu <span>↗</span></a></article>
+          <article class="capability capability-signature"><span class="capability-kicker">SHOW WHAT YOU OFFER</span><div class="capability-scene"><canvas data-service-scene="catalog" role="img" aria-label="Carousel kartu katalog tiga dimensi yang bergantian maju ke depan"></canvas></div><h3>Katalog digital.</h3><p>Tampilkan foto, detail, dan pilihan produk dalam katalog yang rapi. Bantu pelanggan mengenal penawaranmu, lalu arahkan percakapan dan pemesanan ke WhatsApp.</p><a class="service-link" href="#contact">Rencanakan katalogmu <span>↗</span></a></article>
+        </div>
+        <div class="service-connections"><div><span class="capability-kicker">BUILT TO CONNECT</span><h3>Dari penasaran,<br /><em>jadi percakapan.</em></h3></div><article><span class="connection-icon" aria-hidden="true">↗</span><h4>Koneksi WhatsApp</h4><p>Permudah pelanggan menghubungi usahamu langsung dari website untuk bertanya, berkonsultasi, atau memesan.</p></article><article><span class="connection-icon" aria-hidden="true">◎</span><h4>Peta lokasi</h4><p>Arahkan pelanggan ke lokasi usaha. Tampilkan peta dan tautan petunjuk arah. Pengurusan profil Google Bisnis dibahas terpisah.</p></article><article><span class="connection-icon" aria-hidden="true">⌘</span><h4>Link Hub</h4><p>Satukan kontak, katalog, lokasi, dan media sosial dalam satu tautan. Tersedia sebagai layanan tambahan sesuai kebutuhan.</p><a class="service-link" href="#contact">Diskusikan Link Hub ↗</a></article></div>
+        <div class="service-footer"><span>DIRANCANG DI YOGYAKARTA · UNTUK LANGKAH BESARMU</span><a href="#packages">Bandingkan paket & harga ↗</a></div>
+      </section>
+
+      <section id="packages" class="section packages">
+        <div class="package-heading reveal"><p class="eyebrow"><span></span> YOUR NEXT CHAPTER</p><h2>Ambisi berbeda.<br /><em>Paket yang tepat.</em></h2><p>Mulai dari fondasi yang rapi. Berkembang menjadi pengalaman yang berkarakter.</p></div>
+        <div class="price-grid">
+          <article class="price-card reveal"><span class="plan-index">01 / THE FOUNDATION</span><div class="package-scene"><canvas data-service-scene="seed" role="img" aria-label="Inti partikel ungu yang tumbuh dan berputar"></canvas></div><h3>Starter</h3><p>Langkah pertama untuk hadir lebih profesional.</p><div class="price"><s>Rp400.000</s><strong>Rp350.000</strong><small>Promo pembelian pertama · pelanggan baru</small></div><ul><li>4 halaman website</li><li>Desain dasar sesuai warna usaha</li><li>Responsif di HP dan desktop</li><li>Tombol WhatsApp + peta lokasi</li><li>Domain .com standar 1 tahun</li><li>1 putaran revisi · tanpa intro</li></ul><button type="button" class="plan-button" data-plan="Starter">Pilih Starter <span>↗</span></button></article>
+          <article class="price-card plan-business reveal"><span class="plan-index">02 / MAKE AN ENTRANCE</span><div class="package-scene"><canvas data-service-scene="helix" role="img" aria-label="Heliks cahaya berpilin naik dalam ruang tiga dimensi"></canvas></div><h3>Professional</h3><p>Kesan pertama yang hidup dan lebih personal.</p><div class="price"><s>Rp650.000</s><strong>Rp600.000</strong><small>Promo pembelian pertama · pelanggan baru</small></div><ul><li>Hingga 6 halaman website</li><li>Animasi intro logo saat dibuka</li><li>Desain lebih personal</li><li>Katalog hingga 15 produk</li><li>WhatsApp, peta + domain .com 1 tahun</li><li>2 putaran revisi</li></ul><button type="button" class="plan-button" data-plan="Professional">Pilih Professional <span>↗</span></button></article>
+          <article class="price-card plan-signature reveal"><span class="plan-index">03 / THE FULL EXPERIENCE</span><div class="package-scene"><canvas data-service-scene="portal" role="img" aria-label="Pahatan simpul ungu metalik tiga dimensi yang berputar dengan partikel cahaya mengalir"></canvas></div><h3>Premium</h3><p>Pengalaman digital berani. Seperti Atuseng.</p><div class="price"><s>Rp1.000.000</s><strong>Rp950.000</strong><small>Promo pembelian pertama · pelanggan baru</small></div><ul><li>Hingga 8 halaman website</li><li>Intro logo + animasi tiap halaman</li><li>Gaya gerak berbeda, tema konsisten</li><li>Katalog hingga 30 produk</li><li>WhatsApp, peta + domain .com 1 tahun</li><li>3 putaran revisi</li></ul><button type="button" class="plan-button" data-plan="Premium">Pilih Premium <span>↗</span></button></article>
+        </div>
+      </section>
+      <section id="process" class="section process">
+        <p class="eyebrow"><span></span> FROM IDEA TO ONLINE</p><div class="process-title"><h2>Jelas prosesnya.<br /><em>Nyata hasilnya.</em></h2><p>Kamu fokus pada usaha.<br />Kami bantu wujudkan rumah digitalnya.</p></div>
+        <ol class="steps"><li><span>01</span><h3>Pilih & ceritakan</h3><p>Pilih paket, isi kebutuhan singkat, lalu konsultasi bersama Fariz lewat WhatsApp.</p></li><li><span>02</span><h3>Sepakati detail</h3><p>Cek nama domain, lingkup pekerjaan, jadwal, revisi, dan total biaya dalam penawaran tertulis.</p></li><li><span>03</span><h3>Bayar di awal, lalu mulai</h3><p>Lakukan pembayaran penuh sesuai total yang telah disepakati sebelum pengerjaan dimulai. Setelah pembayaran dan materi lengkap diterima, estimasi pengerjaan 1–7 hari. Kamu kemudian meninjau hasil dan memberikan revisi sesuai paket.</p></li><li><span>04</span><h3>Online & milikmu</h3><p>Setelah hasil akhir disetujui, website dipublikasikan. Kamu menerima akses, cadangan website, dan jadwal perpanjangan.</p></li></ol>
+      </section>
+      <section id="about" class="about section">
+        <div class="about-story"><p class="eyebrow"><span></span> THE PERSON BEHIND ATUSENG</p><h2>Saya Fariz.<br /><em>Panggil saja Atuseng.</em></h2><p class="about-opening">Nama asli saya Fariz, biasa dipanggil Atuseng. Saya membantu pemilik usaha mengubah ide menjadi website yang berkarakter dan mudah digunakan.</p><p>ATUSENG ENTREPRENEUR adalah layanan digital yang saya kelola secara mandiri. Saya bekerja secara fleksibel dari mana saja, dengan komunikasi langsung agar kebutuhan dan cerita usahamu tetap menjadi pusat setiap keputusan desain.</p><p>Dari mengenalkan bisnis sampai memudahkan pelanggan menghubungi usaha, saya ingin setiap website punya manfaat yang nyata.</p><a class="button text" href="#contact">Ceritakan idemu ke saya <span>↗</span></a></div>
+        <div class="about-art about-person"><div class="about-art-top"><span>YOGYAKARTA · BEKERJA FLEKSIBEL</span></div><figure class="fariz-profile"><div class="about-portrait-scene"><canvas class="portrait-meteors-back" aria-hidden="true"></canvas><canvas data-service-scene="network" aria-hidden="true"></canvas><img class="fariz-portrait" src="fariz-about-v1.png" width="1199" height="1312" loading="lazy" decoding="async" alt="Fariz, pengelola ATUSENG ENTREPRENEUR, dengan kemeja navy dan pencahayaan ungu" /><canvas class="portrait-meteors-front" aria-hidden="true"></canvas></div><figcaption><strong>Fariz <small>/ Atuseng</small></strong><span>DI BALIK ATUSENG ENTREPRENEUR</span></figcaption></figure><div class="about-art-bottom"><span>IDE</span><i></i><span>DESAIN</span><i></i><span>INTERAKSI</span></div></div>
+        <div class="about-values"><article><span>01 / DENGARKAN</span><h3>Berangkat dari ceritamu.</h3><p>Saya memahami usaha, pelanggan, dan kebutuhanmu sebelum menentukan arah desain.</p></article><article><span>02 / WUJUDKAN</span><h3>Karakter, bukan sekadar dekorasi.</h3><p>Visual dan animasi dirancang untuk memperkuat identitas tanpa menghalangi informasi.</p></article><article><span>03 / HUBUNGKAN</span><h3>Indah dilihat. Mudah digunakan.</h3><p>Dari mengenal produk sampai menghubungi usaha, setiap langkah dibuat jelas dan sederhana.</p></article></div>
+        <div class="about-signoff"><span>DIRANCANG DENGAN NIAT. DIBANGUN DENGAN PERHATIAN.</span><span>ATUSENG ENTREPRENEUR</span></div>
+      </section>
+
+      <section id="faq" class="section faq"><p class="eyebrow"><span></span> GOOD QUESTIONS</p><h2>Sebelum kita <em>mulai.</em></h2><div class="faq-list">
+        <details><summary>4 halaman itu seperti apa?</summary><p>Starter mencakup Home, Services/Produk, About, dan Contact sebagai empat halaman. Jika kamu memilih satu halaman panjang dengan empat bagian, kami sepakati saat konsultasi. Untuk Premium, animasi hadir di tiap halaman atau tiap bagian utama sesuai struktur yang dipilih.</p></details>
+        <details><summary>Apakah Rp350.000 sudah semua biaya?</summary><p>Harga promo Starter mencakup pembuatan dan domain .com standar tahun pertama. Kebutuhan tambahan, pajak jika berlaku, dan total akhir disepakati sebelum kamu membayar. Promo hanya untuk pembelian pertama pelanggan baru.</p></details>
+        <details><summary>Apa beda animasi Professional dan Premium?</summary><p>Professional memiliki intro logo saat website dibuka. Premium memiliki intro dan animasi pada setiap halaman/bagian, dengan variasi gerak seperti website ini. Animasi memakai komponen yang disesuaikan dengan identitas usahamu; pemodelan 3D kompleks memerlukan penawaran tambahan.</p></details>
+        <details><summary>Berapa lama pengerjaannya?</summary><p>Estimasi pengerjaan 1–7 hari setelah pembayaran penuh dan materi lengkap diterima. Jadwal final disepakati sesuai kebutuhan dan lingkup proyek.</p></details>
+        <details><summary>Bagaimana ketentuan pembatalan?</summary><p>Pembatalan dapat dilakukan selama ATUSENG ENTREPRENEUR belum membeli domain .com untuk pesananmu. Biaya jasa sebesar 10% dari pembayaran dipotong, dan sisa 90% dikembalikan. Ajukan pembatalan melalui WhatsApp Fariz agar status pembelian domain dapat diperiksa.</p></details>
+        <details><summary>Apa yang perlu saya siapkan?</summary><p>Logo, teks profil, daftar layanan/produk, foto, dan kontak usaha. Jadwal pengerjaan disepakati setelah kebutuhan dan materi diperiksa. Revisi berarti penyesuaian dalam lingkup awal, bukan penambahan fitur atau pergantian konsep keseluruhan.</p></details>
+        <details><summary>Bagaimana perpanjangan dan kepemilikannya?</summary><p>Domain didaftarkan atas kepemilikan pelanggan. Tahun berikutnya membayar domain sesuai harga penyedia serta layanan tambahan berbayar yang disepakati. Perawatan dan perubahan konten di luar lingkup ditawarkan terpisah. Tidak ada janji aktif selamanya.</p></details>
+        <details><summary>Sudah termasuk toko online dan dashboard?</summary><p>Katalog menampilkan produk dan mengarahkan pemesanan ke WhatsApp. Dashboard admin, stok otomatis, akun pelanggan, pembayaran online, dan lisensi berbayar belum termasuk. Penanaman peta lokasi juga berbeda dari jasa pengurusan profil Google Bisnis.</p></details>
+      </div></section>
+      <section id="contact" class="contact section contact-new">
+        <div class="contact-intro"><p class="eyebrow"><span></span> GREAT THINGS START WITH A HELLO</p><h2>Langkah besarmu,<br />dimulai dari<br /><em>satu halo.</em></h2><p>Punya usaha, ide, atau gambaran website impian? Ceritakan ke Fariz. Kita mulai dari kebutuhanmu, lalu tentukan langkah berikutnya bersama.</p><a class="contact-order" href="https://wa.me/6282322796124?text=Halo%20Fariz%2C%20saya%20ingin%20konsultasi%20dan%20memesan%20website%20ATUSENG%20ENTREPRENEUR." target="_blank" rel="noopener noreferrer"><span><small>KONSULTASI & PEMESANAN</small>Mulai lewat WhatsApp</span><b aria-hidden="true">↗</b></a><span class="contact-phone">FARIZ · 0823 2279 6124</span></div>
+        <div class="contact-signal"><canvas data-service-scene="signal" role="img" aria-label="Aliran partikel cahaya tiga dimensi membentuk gelombang ungu yang menyatu dan menyebar seperti sinyal percakapan"></canvas><span>DARI PERCAKAPAN. MENJADI KEMUNGKINAN.</span></div>
+        <div class="contact-social"><div><span class="contact-small">KEEP IN TOUCH</span><h3>Kenal lebih dekat.</h3></div><a class="instagram-link" href="https://www.instagram.com/mfrz_22/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg><span><small>INSTAGRAM</small>@mfrz_22</span><b aria-hidden="true">↗</b></a><p>Instagram untuk terhubung.<br />Konsultasi dan pemesanan tetap lewat WhatsApp.</p></div>
+        <div class="contact-bottom"><span>ATUSENG ENTREPRENEUR</span><span>YOGYAKARTA · INDONESIA</span><a href="#packages">Lihat pilihan paket ↗</a></div>
+      </section>
+    </main>
+    <footer><span>© 2026 ATUSENG ENTREPRENEUR</span><span>DIGITAL WITH INTENTION</span><a href="#home">KEMBALI KE ATAS ↑</a></footer>
+    <dialog id="project-dialog" aria-labelledby="project-title"><button class="close-dialog" type="button" aria-label="Tutup formulir">×</button><span class="plan-index">LET'S BUILD SOMETHING</span><h2 id="project-title">Mulai dengan <em>ceritamu.</em></h2><form id="project-form"><label>Paket<select name="plan"><option>Starter</option><option>Professional</option><option>Premium</option></select></label><p class="selected-price" aria-live="polite"></p><label>Nama usaha<input name="business" required maxlength="100" autocomplete="organization" placeholder="Contoh: Kopi Senja"></label><label>Status pelanggan<select name="customer"><option value="new">Pelanggan baru — promo pertama</option><option value="returning">Pernah memesan — harga normal</option></select></label><label>Sudah punya domain?<select name="domain"><option>Belum, ingin konsultasi nama domain</option><option>Sudah punya domain</option></select></label><label>Ceritakan kebutuhanmu<textarea name="needs" rows="3" required maxlength="1200" placeholder="Jenis usaha, layanan, dan gambaran website yang diinginkan."></textarea></label><p class="form-note">Total biaya, domain, lingkup pekerjaan, dan jadwal dikonfirmasi bersama Fariz. Estimasi pengerjaan 1–7 hari setelah pembayaran penuh dan materi lengkap diterima. Pembatalan sebelum domain .com dibeli: potongan jasa 10%, pengembalian 90% dari pembayaran. Formulir ini membuka draf WhatsApp, bukan melakukan pembayaran.</p><button class="plan-button" type="submit">Lanjut ke WhatsApp <span>↗</span></button><a id="whatsapp-fallback" hidden target="_blank" rel="noopener noreferrer">Buka draf WhatsApp jika tab tidak muncul ↗</a></form></dialog>
+    <script src="intro-sound.js"></script>
+    <script src="intro.js"></script>
+    <script src="script.js"></script>
+    <script src="studio.js"></script>
+    <script src="galaxy.js"></script>
+    <script src="services.js"></script>
+    <script src="service-scenes.js"></script>
+    <script src="portrait-stars.js"></script>
+    <script src="responsive.js"></script>
+  </body>
+</html>
